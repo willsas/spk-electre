@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBOMo8kvTlkWR1ubKQ_6A0Gy-BNCv3HmxU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>169244201372</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.willasaskara.spk-electre</string>
+	<key>PROJECT_ID</key>
+	<string>spk-electre</string>
+	<key>STORAGE_BUCKET</key>
+	<string>spk-electre.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:169244201372:ios:e5e6b1b836c6f72c2e7859</string>
+</dict>
+</plist>
