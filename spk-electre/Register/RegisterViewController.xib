@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="spk_electre" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="IVp-CW-4Bj" id="HGY-Sg-9SH"/>
+                <outlet property="nameTextField" destination="WfR-ah-9jR" id="bpc-dr-eVE"/>
+                <outlet property="passwordTextField" destination="kFy-Jp-1pc" id="PHe-7j-oGH"/>
+                <outlet property="roleSegmentedControl" destination="Csb-hu-d3b" id="x9d-Od-Hr0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="aIp-Za-wXj">
+                    <rect key="frame" x="16" y="89.000000000000014" width="361" height="252.33333333333337"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IVp-CW-4Bj">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WfR-ah-9jR">
+                            <rect key="frame" x="0.0" y="50" width="361" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kFy-Jp-1pc">
+                            <rect key="frame" x="0.0" y="100" width="361" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8QF-1j-GHe">
+                            <rect key="frame" x="0.0" y="150" width="361" height="52"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="794-i3-4kc">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Csb-hu-d3b">
+                                    <rect key="frame" x="0.0" y="21" width="361" height="32"/>
+                                    <segments>
+                                        <segment title="Admin"/>
+                                        <segment title="Visitor"/>
+                                    </segments>
+                                </segmentedControl>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cy7-AE-thP">
+                            <rect key="frame" x="0.0" y="218" width="361" height="34.333333333333343"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Register"/>
+                            <connections>
+                                <action selector="registerButtonDidTapped:" destination="-1" eventType="touchUpInside" id="hMr-hw-O34"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aIp-Za-wXj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="4U6-mU-1TK"/>
+                <constraint firstItem="aIp-Za-wXj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="SCH-BV-KUM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aIp-Za-wXj" secondAttribute="trailing" constant="16" id="k4n-Sb-QYb"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
